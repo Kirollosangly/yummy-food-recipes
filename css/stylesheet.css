@@ -1,0 +1,114 @@
+/* *** *** Global CSS *** *** */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.crd {
+    cursor: pointer;
+}
+
+/* *** *** main background & Navbar *** *** */
+.primary-container .primary-bg {
+    min-height: 100vh;
+    background-color: black;
+}
+
+.primary-container .primary-bg .navBar {
+    height: 100vh;
+    position: fixed;
+    /* left: ; */
+    z-index: 999;
+}
+
+.primary-container .primary-bg .navBar li {
+    display: none;
+}
+
+.primary-container .primary-bg .navBar .navright {
+    width: 4rem;
+}
+
+.primary-container .primary-bg .navBar .navright .navimg img {
+    width: 3rem;
+}
+
+.primary-container .primary-bg .navBar .navright .navbuttons span {
+    width: 5rem;
+    height: 5rem;
+    cursor: pointer;
+}
+
+#copyR {
+    font-size: 12px;
+}
+
+.form-control:focus {
+    border-color: rgb(237, 253, 13, .8);
+    box-shadow: 0 0 0 0.25rem rgb(237, 253, 13, .2);
+}
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+    opacity: 1; /* Firefox */
+}
+
+.contantUs .form-control::placeholder {
+    color: rgba(0, 0, 0, 0.4);
+    opacity: 1; /* Firefox */
+}
+
+.primary-container .primary-bg .main-section .inner-crd:hover .crd-content,
+.primary-container .primary-bg .main-meal .inner-crd:hover .crd-content {
+    top: 0;
+}
+
+.primary-container .primary-bg .main-section .crd-content,
+.primary-container .primary-bg .main-meal .crd-content {
+    position: absolute;
+    width: 100%;
+    top: 100%;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    transition: .5s ease;
+}
+
+/* *** loadingPage *** */
+bodY {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.center {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+
+.wave {
+    width: 5px;
+    height: 100px;
+    background: linear-gradient(45deg, rgba(208, 255, 0, 0.63), #fff27e);
+    margin: 10px;
+    animation: wave 1s linear infinite;
+    border-radius: 20px;
+}
+
+.wave:nth-child(2) {animation-delay: 0.1s;}
+.wave:nth-child(3) {animation-delay: 0.2s;}
+.wave:nth-child(4) {animation-delay: 0.3s;}
+.wave:nth-child(5) {animation-delay: 0.4s;}
+.wave:nth-child(6) {animation-delay: 0.5s;}
+.wave:nth-child(7) {animation-delay: 0.6s;}
+.wave:nth-child(8) {animation-delay: 0.7s;}
+.wave:nth-child(9) {animation-delay: 0.8s;}
+.wave:nth-child(10) {animation-delay: 0.9s;}
+@keyframes wave {
+    0% {transform: scale(0);}
+    50% {transform: scale(1);}
+    100% {transform: scale(0);}
+}
